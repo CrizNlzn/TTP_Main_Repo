@@ -1,0 +1,26 @@
+body
+{
+
+    background-color:darkslateblue;
+}
+
+h1 {
+    color: aqua;
+}
+
+a {
+    
+    font-size: 2rem;
+    color: rgb(255, 40, 40);
+    text-align: center;
+}
+
+* {
+    padding: 4;
+    margin: 0;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    box-sizing: border-box;
+}
