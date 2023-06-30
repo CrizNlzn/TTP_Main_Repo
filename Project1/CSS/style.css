@@ -1,0 +1,43 @@
+/* Navbar */
+body {
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+    clear: both;
+    position: absolute;
+}
+
+.footerContent {
+    font-family: sans-serif;
+    font-size: large;
+    color: #c91717;
+    float:left;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    float:left; width:100%; text-align:center;
+     }
