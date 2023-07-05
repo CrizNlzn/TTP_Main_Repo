@@ -1,43 +1,467 @@
-/* Navbar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-size: large;
+    background: #1F3044;
+    color: #ededed;
+}
+/* logo */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.resizelogo {
+    width: 220px;
+    height: 200px;
+
+}
+
+/* Logo ^^^ */
+/* ****************************************************************** */
+
+
+/* Nav */
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 40px;
+    transition: .3s;
+}
+
+/* doesnt work - trying to get home to be blue */
+/* .nav a:hover, .nav a:active {
+    color: #00abf0;
+} */
+/* Nav ^^^ */
+
+
+/* ****************************************************************** */
+/* home */
+.home{
+    height: 100vh;
+    background-color: #1F3044;
+    align-items: center;
+    display: flex;
+    padding: 0 10%;
+
+}
+
+.home-content {
+    max-width: 600px;
+
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #1F3044;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #BCFD4C;
+}
+
+.home-content h3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #1F3044;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #1F3044;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+
+.home-content .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+    
+}
+
+.home-content .btn-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #1F3044;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+/* home ^^^^ */
+
+
+/* ****************************************************************** */
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: #BCFD4C;
+    border: 1px solid #BCFD4C;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* for 2 boxes visuals of hire/chat */
+.btn-box a:hover {
+    color: #BCFD4C;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #BCFD4C;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #1F3044;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #BCFD4C;
+}
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #1F3044;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 150;
+}
+
+
+
+/* ****************************************************************** */
+/* My icons for links */
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-sci::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #1F3044;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #BCFD4C;
+    border-radius: 20%;
+    font-size: 40px;
+    color:#BCFD4C;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #1F3044;
+
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #BCFD4C;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+/* My icons for links ^^^*/
+
+
+
+/* ****************************************************************** */
+/* image */
+.images {
+    /* width:400px;
+    height:400px; */
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .me{
+    left: 45%;
+}
+
+
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
 }
 
 
 
 
+/* ****************************************************************** */
+
+/* About section */
+.about a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: #BCFD4C;
+    border: 1px solid #BCFD4C;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* for 2 boxes visuals of hire/chat */
+.about a:hover {
+    color: #BCFD4C;
+}
+
+.about a {
+    background: transparent;
+    color: #BCFD4C;
+}
+
+.about a:hover {
+    color: #1F3044;
+}
+
+.about a::before {
+    background: #BCFD4C;
+}
 
 
+.about a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #BCFD4C;
+    z-index: -1;
+    transition: 1s;
+}
+
+.about a:hover::before {
+    width: 150;
+}
+
+/* ****************************************************************** */
+
+.button a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: #BCFD4C;
+    border: 1px solid #BCFD4C;
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* for 2 boxes visuals of hire/chat */
+.button a:hover {
+    color: #BCFD4C;
+}
+
+.button a {
+    background: transparent;
+    color: #BCFD4C;
+}
+
+.button a:hover {
+    color: #1F3044;
+}
+
+.button a::before {
+    background: #BCFD4C;
+}
 
 
+.button a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #BCFD4C;
+    z-index: -1;
+    transition: 1s;
+}
 
-
-
-
-
-
-
+.button a:hover::before {
+    width: 150;
+}
+/* ****************************************************************** */
 
 
 /* footer */
-.footer {
-    width: 100%;
-    z-index: 999;
-    bottom: 0;
-    clear: both;
-    position: absolute;
-}
-
-.footerContent {
-    font-family: sans-serif;
-    font-size: large;
-    color: #c91717;
+.bottom {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
     float:left;
     width:100%;
+    margin-left: auto;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: 1000;
 }
 
-.footer {
-    float:left; width:100%; text-align:center;
-     }
+.bottom a:link {
+    color: #BCFD4C;
+}
+
+.bottom a:hover {
+    color: red;
+}
+
+.bottom a {
+    color: #BCFD4C;
+}
+
