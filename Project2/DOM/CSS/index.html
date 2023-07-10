@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criz' Guessing Game </title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+<div class="intro">
+<center>
+    <h2>Guess the number im thinking right now... but first, scroll to bottom</h2>
+        <h3>now that you read it, you got 10 attempts: Guess</h3><br><br>
+</div>
+
+<div class="subENTRY">
+    <form action="" class="Submission">
+        <label for="Entry" id="sub"> What you thinking?</label>
+        <input type="text" id="Answerbox" class="AnsBox">
+        <input type="submit" id="CheckBox" value="Check your Answer" class="SubBox">
+    </form>
+</center>
+
+    <div class="feedback">
+<center>
+    <h4><p id="Reply1">Your favor: None (lol)</p></h4>
+    <h4><p id="Reply2">Your Remains: <span class="PrevAnswer">10</span></p></h4>
+    <h4><p id="Reply3">In case you forgot your lightbulbs: <span class="PrevGuess"></span></p></h4>
+</center>
+
+    <center><p class="hiLow"></p></center>
+    
+    </div>
+</div>
+
+
+<br><br><br><br><br>
+<div class="bottom"></div>
+<center>
+    <h5><p>this is how it works:</p></h5>
+    <h5><li>Type your guess</li></h5>
+    <h5><li>range it from 1-100</li></h5>
+    <h5><li>you guess correct, you win </li></h5>
+    <h5><li>you guess wrong, go read something</li></h5>
+    <h5><li>go back up</li></h5>
+</center>
+
+<!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+html {
+    font-family: cursive;
+    background-color: darkslategray;
+}
+
+
+body {
+    position: relative;
+    margin: auto;
+    width: 75%;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.PrevAnswer {
+    color: black;
+    padding: 8px;
+}
+
+
+.PrevGuess {
+    color: black;
+    padding: 8px;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+
+#Answerbox {
+    color: black;
+    width: 200px;
+    height: 50px;
+    font-size: 10;
+    padding: 10px;
+    margin: auto;
+    border-style: none;
+    margin-top: 25px;
+    font-size: 25px;
+    border: 5px solid;
+
+}
+
+
+#CheckBox {
+    font-family: cursive;
+    background-color: goldenrod;
+    color: black;
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 13px;
+    border-style: none;
+}
+
+
+#sub {
+    margin: auto;
+    font-size: 25px;
+}
+
+#subENTRY {
+    box-sizing: border-box;
+    width: 600px;
+    height: 500px;
+    background-color: blueviolet;
+    text-align: center;
+    color: white;
+}
+.hiLow {
+    padding-top: 20px;
+    position: relative;
+}
+
+.bottom {
+    align-content: baseline;
+    padding-top: 500px;
+}
