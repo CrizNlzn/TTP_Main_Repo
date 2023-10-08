@@ -10,6 +10,93 @@ body {
     background: #1F3044;
     color: #ededed;
 }
+
+.contents{
+    width: 100%;
+    padding: 35px 10%;  
+}
+
+.contents{
+    padding-right:calc(10% - 30px);
+}
+
+main.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.col header.Education .Experience{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1F3044;
+    padding: 0px 0px 30px 30px;
+}
+
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid #BCFD4C;
+}
+
+.col .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 2px solid #BCFD4C;
+    background-color: #1F3044;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+
+}
+
+.col .contents .box::before{
+    content: ' ';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #BCFD4C;
+    border: 2px solid white;
+
+}
+
+.box h4 {
+    position: relative;
+    color: #bababa;
+}
+
+.box h3 {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #BCFD4C;
+}
+
+.col h1{
+    padding: 20px;
+}
+.box p{
+    line-height: 1.2;
+    color: #666;
+    font-size: 17px;
+}
+
+@media(max-width: 768px) {
+    main.row{
+        grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2) {
+        margin-top: 30px;
+    }
+
+ }
+
 /* logo */
 .header {
     position: absolute;
@@ -36,6 +123,7 @@ body {
 
 /* Nav */
 nav {
+    background-color: #243581;
     display: flex;
     width: 100%;
     margin: auto;
@@ -383,6 +471,7 @@ nav {
 /* ****************************************************************** */
 
 .button a{
+    color: black;
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -436,6 +525,22 @@ nav {
 .button a:hover::before {
     width: 150;
 }
+
+/* ****************************************************************** */
+
+.per .contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #BCFD4C;
+    position: relative;
+    padding: 20px;
+    border: 2px solid #BCFD4C;
+    background-color: #1F3044;
+    
+}
+
+
 /* ****************************************************************** */
 
 
@@ -465,3 +570,9 @@ nav {
     color: #BCFD4C;
 }
 
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding:
+            var(--scroll-padding, 5rem)
+}

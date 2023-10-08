@@ -5,6 +5,10 @@
         <title>CrizWrld</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--added recently for smooth scrolling-->
+        <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@17.3.3/dist/smooth-scroll.polyfills.min.js"></script>
+
     </head>
 <body>
   <!-- /* ****************************************************************** */ -->
@@ -12,14 +16,15 @@
             <div class="header">
                <img src="images/csglogo.png" class="resizelogo" alt="logo"></a>
 
-                <nav class="nav">
-                
+        <nav class="nav">
+            <ul class = "nav-list">
                 <a href="#Home" class="active">Home</a>
                 <a href="#About">About</a>
                 <a href="#Contact">Contact</a>
                 <a href="#Education">Education</a>
                 <a href="#Skills">Skills</a>
-                </nav>
+            </ul>
+        </nav>
             </div>
             
 
@@ -31,8 +36,10 @@
             <div id="Home">
             <h1>Hi, Im Chris</h1>
                 <h3>Cybersecurity Student</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id debitis, totam commodi sed deleniti possimus alias ipsam est quae aliquam incidunt vitae consequuntur? Non magni recusandae vitae rem amet fuga.</p>
-                    
+                    <p>
+                        Rising cybersecurity student from the suburbs of New York City with strong technical skills and an academic background in IT, machine learning, and computer penetration. Exploring the world of computer science, committed to solving and understanding complex problems in fields such as medicine, science, and business: be it ideas from different artistries, people from different teams, or applications from different services.
+
+                    </p>
                         <div class="btn-box">
                             <a href="#Hire">Hire Me</a>
                             <a href="#Chat">Lets Chat</a>
@@ -52,42 +59,131 @@
         </div>
 
     </section>
+
     <!-- /* ****************************************************************** */ -->
 <br><br><br><br><br>
     <section class="contact" id="contact">
         <div id="Contact">
         <h1>My Hotline Bling</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat repudiandae non ad magnam, sed possimus, qui ipsa minus debitis consequatur commodi totam nisi molestias quaerat autem illo ratione, accusantium adipisci.>
-            </p>
+            
         </div>
 
     </section>
+
 <!-- /* ****************************************************************** */ -->
 <br><br><br><br><br>
-<section class="education" id="education">
+<main class = "row">
+
+<section class="col" id="education">
     <div id="Education">
     <h1>The Studies</h1>
-        <p>
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, amet consequuntur. Nisi possimus aliquid veritatis officiis, neque ut rem, saepe iusto labore eligendi dicta quasi est inventore provident expedita nesciunt!
-        </p>
+       <header>
+
+        <div class = "contents">
+            <div class = "box">
+                <h3>CUNY John Jay College of Criminal Justice</h3>
+                        <h4>Bachelors in Computer Science & Information Security</h4>
+                        <span>2020 - 2024</span>
+                <p>
+                    Relevant Coursework: Computer Security and Forensics, Computer Cryptography and Cryptanalysis, Linux and Security, Computer Organization and Assembly Language, Object-Oriented Programming in Java/C++.
+                </p>
+            </div>
+
+                <div class = "box">
+                    <h3>Westchester Community College</h3>
+                            <h4>Associate in Applied Science</h4>
+                            <h4>Concentration: Cybersecurity</h4>
+                            <span>2018-2020</span>
+                    <p>
+                        Relevant Coursework: Computer Hardware, Computer Forensics, Server Administration, Network Security, Computer Penetration Testing, Object Oriented Programming (Visual Basic), PC Operating Systems.
+                    </p>
+                </div>
+
+                <div class = "box">
+                        <h3>Tuckahoe High School</h3>
+                            <h4>Regents Diploma</h4>
+                            <span>2014 - 2018</span>
+                
+                </div>
+       </header>
     </div>
 </section>
+
+<!-- ****************************** EDUCATION ENDS ***************-->
+
+<!-- /* ****************************************************************** */ -->
+
+<!-- ****************************** EXP STARTS ***************-->
+<section class="col" id="Experience">
+    <div id="title">
+    <h1>The Works</h1>
+       <header>
+
+        <div class = "contents">
+            <div class = "box">
+                <h3>Web Development Fellow</h3>
+                    <h4>NYC Tech Talent Pipeline</h4>
+                        <span>2023 - Present</span>
+                <p>
+                    Gained hands-on experience in front-end/back-end tools in a 10-week full-stack web development bootcamp.
+                    Acquired a strong foundation in HTML, CSS, JavaScript, React, Node.js, and databases by creating and implementing them in real-world projects.
+                    Developed my website using HTML and CSS to deliver an excellent, vibrant, fluent page that illustrates my relevant work (in progress)
+                    
+                </p>
+            </div>
+
+            <div class = "box">
+                <h3>Knowledge Advisor</h3>
+                    <h4>Micro Center</h4>
+                        <span>2021 - 2021</span>
+                <p>
+                    Increased sales of service plans and warranties by 15% in the first three months resulting in the company selling the most protection and being awarded #1 in my store location (Yonkers) and #4 nationwide.
+                    Led sales and achieved customer satisfaction by listening to customer needs and providing relevant information on Micro Center product offerings. 
+                    Built an average of 2 computers every week to fit the customers' needs and recommended the best products based on comparing product benchmarks.
+                    
+                </p>
+            </div>
+
+                <div class = "box">
+                        <h3>Cybersecurity Club Member</h3>
+                            <h4>Westchester Community College</h4>
+                                <span>2019 - 2020</span>
+                    <p>
+                        Explored how to manage, protect, and secure computer systems functions, including forensic extraction from hardware and software applications.
+                        Introduced operation of workstations and servers and learned to manage, identify, and recognize problems and attacks.
+                        Recognized multiple ways in which the security of computer systems can be breached and how to make computer systems more secure.
+                        Wrote security and forensic reports that could be used in a court of law. 
+
+                    </p>
+                </div>
+
+       </header>
+    </div>
+</section>
+
+</main>
+
+<!-- ****************************** EXP ENDS ***************-->
 
 
 <!-- /* ****************************************************************** */ -->
 <br><br><br><br><br>
 <body>
-    <section class="skills" id="skills">
-        <div id="Skills">
+    <section class="per" id="skills">
+       <div class = "contents">
+            <div id="Skills">
         <h1>The Performance</h1>
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, amet consequuntur. Nisi possimus aliquid veritatis officiis, neque ut rem, saepe iusto labore eligendi dicta quasi est inventore provident expedita nesciunt!
-            </p>
-        </div>
+            <ul>
+                <li>Technologies: Go, Node, PostgreSQL, AWS, Google Cloud, Sequelize, Git/GitHub.</li>
+                <li>Programming Languages: JavaScript, Python, C++, Java, CSS, HTML, PowerShell, MySQL, R</li>
+                <li>Frameworks: React.js, Express, Bootstrap (HTML/Java), Node.js.</li>
+                <li>Pentesting: Metasploit, Nmap, Wireshark</li>
+                <li>Languages: Brazilian Portuguese (Fluent) and Spanish (Intermediate).</li>
+        </ul>    
+            </div>
+    </div> 
     </section>
 </body>
-
 
 <!-- /* ****************************************************************** */ -->
     
@@ -103,7 +199,7 @@
 
     <!-- Audio configuration -->
     <!-- take control off on last day of completion -->
-            <audio controls autoplay src="audio/ya.mp3"></audio>
+            <!--<audio controls autoplay src="audio/ya.mp3"></audio>
 
 <!-- /* ****************************************************************** */ -->
    
